@@ -1,138 +1,143 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+<ScrollView android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <TextView
-        android:id="@+id/tv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Academic Program"
-        android:textSize="20sp"/>
-
-    <android.support.v7.widget.AppCompatSpinner
-        android:id="@+id/programspinner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true">
-
-    </android.support.v7.widget.AppCompatSpinner>
-
-    <TextView
-        android:id="@+id/tv1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tv"
-        android:textSize="20sp"
-        android:text="Last Name"/>
-
-    <EditText
-        android:id="@+id/et"
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tv1"/>
-
-    <TextView
-        android:id="@+id/tv2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/et"
-        android:textSize="20sp"
-        android:text="First Name"/>
-
-    <EditText
-        android:id="@+id/et2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tv2"/>
-
-    <TextView
-        android:id="@+id/tv3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/et2"
-        android:textSize="20sp"
-        android:text="Middle Name"/>
-
-    <EditText
-        android:id="@+id/et3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tv3"/>
-
-    <TextView
-        android:id="@+id/tv4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/et3"
-        android:textSize="20sp"
-        android:text="Gender"/>
-
-    <RadioGroup
-        android:id="@+id/rg"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tv4"
-        android:orientation="horizontal">
-
-        <RadioButton
-            android:id="@+id/rd1"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+        
+        <TextView
+            android:id="@+id/tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Male"/>
-        <RadioButton
-            android:id="@+id/rd2"
+            android:text="Academic Program"
+            android:textSize="20sp"/>
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/programspinner"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="100dp"
-            android:text="Female"/>
-    </RadioGroup>
+            android:layout_alignParentEnd="true">
 
-    <TextView
-        android:id="@+id/tv5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/rg"
-        android:textSize="20sp"
-        android:text="Requirements"/>
+        </android.support.v7.widget.AppCompatSpinner>
 
-    <CheckBox
-        android:id="@+id/cb"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tv5"
-        android:textSize="15sp"
-        android:text="Original Report Card (Form 138)"/>
-    <CheckBox
-        android:id="@+id/cb1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/cb"
-        android:textSize="15sp"
-        android:text="NSO copy of Birth Certificate"/>
-    <CheckBox
-        android:id="@+id/cb2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/cb1"
-        android:textSize="15sp"
-        android:text="Certificate of Good Moral Character"/>
-    <CheckBox
-        android:id="@+id/cb3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/cb2"
-        android:textSize="15sp"
-        android:text="Certification of Junior High School Completion"/>
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv"
+            android:textSize="20sp"
+            android:text="Last Name"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/cb3"
-        android:textSize="15sp"
-        android:text="Submit"
-        android:layout_centerHorizontal="true"/>
-</RelativeLayout>
+        <EditText
+            android:id="@+id/et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv1"/>
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et"
+            android:textSize="20sp"
+            android:text="First Name"/>
+
+        <EditText
+            android:id="@+id/et2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv2"/>
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et2"
+            android:textSize="20sp"
+            android:text="Middle Name"/>
+
+        <EditText
+            android:id="@+id/et3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv3"/>
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et3"
+            android:textSize="20sp"
+            android:text="Gender"/>
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv4"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rd1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"/>
+            <RadioButton
+                android:id="@+id/rd2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:text="Female"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rg"
+            android:textSize="20sp"
+            android:text="Requirements"/>
+
+        <CheckBox
+            android:id="@+id/cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv5"
+            android:textSize="15sp"
+            android:text="Original Report Card (Form 138)"/>
+        <CheckBox
+            android:id="@+id/cb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cb"
+            android:textSize="15sp"
+            android:text="NSO copy of Birth Certificate"/>
+        <CheckBox
+            android:id="@+id/cb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cb1"
+            android:textSize="15sp"
+            android:text="Certificate of Good Moral Character"/>
+        <CheckBox
+            android:id="@+id/cb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cb2"
+            android:textSize="15sp"
+            android:text="Certification of Junior High School Completion"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cb3"
+            android:textSize="15sp"
+            android:text="Submit"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</ScrollView>
