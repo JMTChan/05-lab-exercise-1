@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">SHS Student Registration</string>
         <string-array name="academic_program">
             <item>ABM</item>
             <item>BSIT</item>
